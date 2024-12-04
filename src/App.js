@@ -1,10 +1,15 @@
 import './App.css';
-import FirstComp from './components/FirstComp';
+import ProjectWeeks from './components/ProjectWeeks';
 import StudentProjects from './components/StudentProjects';
+import Navbar from './components/Navbar';
+
+
 function App() {
   return (
     <div className="App">
-      <StudentProjects />
+      <Navbar />
+      {/* <ProjectWeeks /> */}
+      <StudentProjects/>
     </div>
   );
 }

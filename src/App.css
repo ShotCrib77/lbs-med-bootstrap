@@ -1,6 +1,200 @@
+:root {
+  --semitransparent-bg-color: rgba(255, 255, 255, 0.85);
+  --lbs-black: #262626;
+  --lbs-yelllow: #FFEB3B;
+  --lbs-yelllow-hover: #d8c411;
+
+  --lbs-green: #319e31;
+  --lbs-purple: #c922c9;
+  --lbs-yelllow-secondary: #ecde5c;
+  --lbs-pink: #f3899b;
+  --lbs-orange: #eeaf3a;
+  --lbs-blue: #9b9bf3;
+  --lbs-white: #ffffff;
+}
+
 .maintxt {
   position: relative;
 }
 .maintxt > img, .overlay-text {
   position: absolute;
+}
+
+.bg-semi-transparent {
+  background-color: var(--semitransparent-bg-color);
+}
+
+.bg-lbs-black {
+  background-color: var(--lbs-black);
+}
+
+.bg-lbs-green {
+  background-color: var(--lbs-green);
+}
+
+.bg-lbs-purple {
+  background-color: var(--lbs-purple);
+}
+
+.bg-lbs-pink {
+  background-color: var(--lbs-pink);
+}
+
+.bg-lbs-orange {
+  background-color: var(--lbs-orange);
+}
+
+.bg-lbs-blue {
+  background-color: var(--lbs-blue);
+}
+
+.bg-lbs-yellow-secondary {
+  background-color: var(--lbs-yelllow-secondary);
+}
+
+.text-lbs-green {
+  color: var(--lbs-green) !important;
+}
+
+.text-lbs-purple {
+  color: var(--lbs-purple) !important;
+}
+
+.text-lbs-pink {
+  color: var(--lbs-pink) !important;
+}
+
+.text-lbs-orange {
+  color: var(--lbs-orange) !important;
+}
+
+.text-lbs-blue {
+  color: var(--lbs-blue) !important;
+}
+
+.text-lbs-yellow-secondary {
+  color: var(--lbs-yelllow-secondary) !important;
+}
+
+
+.bg-active {
+  background-color: var(--lbs-black) !important;
+}
+
+.text-lbs-black {
+  color: var(--lbs-black)
+}
+
+.no-outline:focus, .no-outline:active {
+  box-shadow: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.35rem;
+  padding: 0.75rem 1rem;
+}
+
+.nav-logo {
+  width: 175px;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.sticky-navbar {
+  z-index: 1020;
+}
+
+.drop-shadow {
+  filter: drop-shadow(5px 2px 5px #000000);
+}
+
+.responsive-heading {
+  font-size: 2.5rem; 
+}
+
+@media (max-width: 768px) {
+  .responsive-heading {
+    font-size: 2rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-heading {
+    font-size: 1.5rem;
+  }
+}
+
+.mt-6 {
+  margin-top: 5rem;
+}
+
+.mt-7 {
+  margin-top: 7rem;
+}
+
+.p-section {
+  padding: 10rem 0;
+}
+
+@media (max-width: 768px) {
+  .p-section {
+    padding: 7rem 0;
+  }
+}
+
+.lbs-btn {
+  max-width: 15rem;
+  background-color: var(--lbs-yelllow-hover);
+}
+
+.lbs-btn:hover {
+  background-color: var(--lbs-yelllow-hover);
+}
+
+.program-btn:hover {
+  background-color: var(--lbs-black);
+  color: var(--lbs-white)
+}
+
+.program-btn:hover .program-image{
+  filter: invert(100%);
+}
+
+.iframe-container {
+  width: 900px;
+  height: calc(900px / (3.9 / 3)); /* För att maps funktionalitet på 2023-sidan ska fungera*/
+}
+
+.max-w-40 {
+  max-width: 40px;
+}
+
+@media (max-width: 768px) {
+  .iframe-container {
+    width: 750px;
+    height: calc(750px / (3.9 / 3)); 
+  }
+}
+
+@media (max-width: 420px) {
+  .iframe-container {
+    width: 625px;
+    height: calc(650px / (3.9 / 3));
+  }
+}
+
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.filter-100 {
+  filter: invert(100%);
 }
