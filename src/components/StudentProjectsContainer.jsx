@@ -27,23 +27,62 @@ export default function StudentProjectsContainer() {
   }, [currentActiveProgram]);
 
   return (
-    <section className="bg-white text-lbs-black p-section justify-content-center" id="student-projects">
+    <section className="bg-white text-lbs-black p-section justify-content-center">
       <div className="row">
         <h1 className="col-12 text-center mb-5 fw-bold">Elevprojekt</h1>
       </div>
 
       <ProgramButtons setCurrentActiveProgram={setCurrentActiveProgram} currentActiveProgram={currentActiveProgram}/>
-      
-      <div className="row">
+  
+      <div className="row" id="student-projects">
         <h2 className="text-lbs-black text-center my-5">{currentDisplayedProgram}</h2>
       </div>
-      <div className="row">
-        <div className="col-12">
-          <ImageFiller width={200} height={200} />
-          <ImageFiller width={200} height={200} />
-          <ImageFiller width={200} height={200} />
+      <section className="projects-section d-flex flex-column gap-5">
+        <div className="row">
+          <div className="col-12 d-flex justify-content-around">
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+          </div>
         </div>
-      </div>
+
+        <div className="row">
+          <div className="col-12 d-flex justify-content-around">
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-12 d-flex justify-content-around">
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-12 d-flex justify-content-around">
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-12 d-flex justify-content-around">
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+            <ImageFiller width={200} height={200} />
+          </div>
+        </div>
+      </section>
     </section>
   );
 }

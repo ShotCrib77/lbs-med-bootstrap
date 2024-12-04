@@ -1,10 +1,14 @@
 export default function ProgramButton({ program, bgColorClass, iconSource, isActive, toggleActive }) {
-  const handleButtonClick = () => {
-    toggleActive(program);
+  const handleScroll = () => {
+    const section = document.querySelector("#student-projects");
+    section.scrollIntoView({ behavior: "smooth" });
   };
   
-  console.log(bgColorClass)
-
+  const handleButtonClick = () => {
+    toggleActive(program);
+    handleScroll()
+  };
+  
   return (
     <>
       <button

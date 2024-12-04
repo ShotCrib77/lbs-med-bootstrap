@@ -2,7 +2,7 @@
   --semitransparent-bg-color: rgba(255, 255, 255, 0.85);
   --lbs-black: #262626;
   --lbs-yelllow: #FFEB3B;
-  --lbs-yelllow-hover: #d8c411;
+  --lbs-yelllow-hover: #d6c101;
 
   --lbs-green: #319e31;
   --lbs-purple: #c922c9;
@@ -22,6 +22,10 @@
 
 .bg-semi-transparent {
   background-color: var(--semitransparent-bg-color);
+}
+
+.bg-lbs-yellow {
+  background-color: var(--lbs-yelllow);
 }
 
 .bg-lbs-black {
@@ -75,7 +79,6 @@
 .text-lbs-yellow-secondary {
   color: var(--lbs-yelllow-secondary) !important;
 }
-
 
 .bg-active {
   background-color: var(--lbs-black) !important;
@@ -151,11 +154,15 @@
 
 .lbs-btn {
   max-width: 15rem;
-  background-color: var(--lbs-yelllow-hover);
+  background-color: var(--lbs-yelllow);
 }
 
 .lbs-btn:hover {
   background-color: var(--lbs-yelllow-hover);
+}
+
+.btn:hover {
+  color: var(--lbs-black)
 }
 
 .program-btn:hover {
@@ -197,4 +204,14 @@
 
 .filter-100 {
   filter: invert(100%);
+}
+
+#student-projects {
+  scroll-margin-top: 75px;
+}
+
+@media (max-width: 768px) {
+  #student-projects {
+    scroll-margin-top: 0px;
+  }
 }
