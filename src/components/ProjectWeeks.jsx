@@ -14,26 +14,29 @@ export default function ProjectWeeks() {
 
       <ProgamWeeksInfo />
 
-      <div className="row">
-
-        <section className="p-section bg-lbs-black text-white d-flex flex-column align-items-center" id="projects">
+      <section className="p-section bg-lbs-black text-white d-flex flex-column align-items-center mx-0" id="projects">
+        <div className="row justify-content-center">
           <h1 className="col-10 text-center mb-5 fw-bold">Programveckorna - AW&#8288;/&#8288;AI&nbsp;och&nbsp;GD</h1> {/*AW&#8288;/&#8288;AI&nbsp;och&nbsp;GD -> Gör så att det hänger ihop med varandra*/}
+        </div>
 
-          <div className="d-flex flex-wrap justify-content-center">
+        <div className="d-flex flex-wrap justify-content-center">
+          <div className="row justify-content-center mb-5">
             <ProgamWeeksContainerAWGD 
               year="2024" 
               projectTheme="Mänskliga&nbsp;Rättigheter" 
               mainPageLink="http://humanrights.lbsforsustainability.se/home" 
             />
+          </div>
+
+          <div className="row justify-content-center">
             <ProgamWeeksContainerAWGD 
               year="2023" 
               projectTheme="Hållbarhet" 
               mainPageLink="https://lbsforsustainability.se/sustainability2023/pages/home"
             />
           </div>
-        </section>
-
-      </div>
+        </div>
+      </section>
     </section>
   ); 
 };

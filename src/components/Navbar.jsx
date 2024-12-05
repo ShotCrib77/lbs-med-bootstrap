@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 export default function Navbar() {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -31,39 +33,39 @@ export default function Navbar() {
         >
           <ul className="navbar-nav text-center">
             <li className="nav-item mx-2">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Hem
-              </a>
+              </Link>
             </li>
             <li className="nav-item mx-2">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/programs">
                 Program
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown mx-2">
-              <a
+              <Link
                 className="nav-link dropdown-toggle"
-                href="#"
+                to="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Våra Elevprojekt
-              </a>
+              </Link>
               <ul
                 className="dropdown-menu dropdown-menu-dark"
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/studentprojects">
                     Elevprojekt
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/projectweeks">
                     Programveckor
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>

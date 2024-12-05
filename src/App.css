@@ -1,5 +1,6 @@
 :root {
   --semitransparent-bg-color: rgba(255, 255, 255, 0.85);
+  --semitransparent-grey: rgba(236, 236, 236, 0.7);
   --lbs-black: #262626;
   --lbs-yelllow: #FFEB3B;
   --lbs-yelllow-hover: #d6c101;
@@ -22,6 +23,10 @@
 
 .bg-semi-transparent {
   background-color: var(--semitransparent-bg-color);
+}
+
+.bg-semi-transparent-grey {
+  background-color: var(--semitransparent-grey);
 }
 
 .bg-lbs-yellow {
@@ -212,6 +217,24 @@
 
 @media (max-width: 768px) {
   #student-projects {
-    scroll-margin-top: 0px;
+    scroll-margin-top: 50px;
   }
+}
+
+.max-w-300 {
+  max-width: 300px;
+}
+
+.max-w-200 {
+  max-width: 200px;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 0 !important;
 }
