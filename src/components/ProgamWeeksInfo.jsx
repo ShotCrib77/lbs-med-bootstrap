@@ -7,7 +7,7 @@ export default function ProgamWeeksInfo() {
   };
   
   return (
-      <div className="row justify-content-evenly align-items-center justify-content-center flex-wrap p-section">
+      <div className="row justify-content-evenly align-items-center justify-content-center flex-wrap p-section bg-lbs-black text-white">
         <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
           <img className="col-8 col-md-12 image-fluid" src="https://lbs.se/wp-content/uploads/sites/21/2023/06/lbs-kreativa-gymnasiet-202304-600x600.jpg" alt="Bild av glada elever"/>
         </div>

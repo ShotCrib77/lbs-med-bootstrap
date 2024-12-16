@@ -14,7 +14,7 @@ export default function ProjectWeeks() {
 
       <ProgamWeeksInfo />
 
-      <section className="p-section bg-lbs-black text-white d-flex flex-column align-items-center mx-0" id="projects">
+      <section className="p-section text-lbs-black bg-white d-flex flex-column align-items-center mx-0" id="projects">
         <div className="row justify-content-center">
           <h1 className="col-10 text-center mb-5 fw-bold">Programveckorna - AW&#8288;/&#8288;AI&nbsp;och&nbsp;GD</h1> {/*AW&#8288;/&#8288;AI&nbsp;och&nbsp;GD -> Gör så att det hänger ihop med varandra*/}
         </div>

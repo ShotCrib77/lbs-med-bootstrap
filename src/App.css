@@ -93,6 +93,15 @@
   color: var(--lbs-black)
 }
 
+.border-lbs-black {
+  border-color: var(--lbs-black)
+}
+
+.form-control:focus {
+  border-color: var(--lbs-black);
+  box-shadow: none;
+}
+
 .no-outline:focus, .no-outline:active {
   box-shadow: none;
 }
@@ -235,6 +244,17 @@
 .container-md,
 .container-sm,
 .container-xl,
-.container-xxl {
+.container-xxl,
+.row {
   --bs-gutter-x: 0 !important;
+}
+
+.search-width {
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  .search-width {
+    width: 75%
+  }
 }

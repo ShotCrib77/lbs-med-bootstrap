@@ -1,12 +1,18 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const location = useLocation();
+  
 
   const handleToggle = () => {
     setIsExpanded((prevState) => !prevState);
+  };
+
+  const isActive = (path) => {
+    return location.pathname === path ? "nav-link active" : "nav-link";
   };
 
   return (
@@ -33,18 +39,23 @@ export default function Navbar() {
         >
           <ul className="navbar-nav text-center">
             <li className="nav-item mx-2">
-              <Link className="nav-link active" aria-current="page" to="/">
+              <Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" to="/">
                 Hem
               </Link>
             </li>
             <li className="nav-item mx-2">
-              <Link className="nav-link" to="/programs">
+              <Link className={`nav-link ${location.pathname === "/programs" ? "active" : ""}`} to="/programs">
                 Program
               </Link>
             </li>
             <li className="nav-item dropdown mx-2">
               <Link
-                className="nav-link dropdown-toggle"
+                className={`nav-link dropdown-toggle ${
+                  location.pathname.includes("/studentprojects") ||
+                  location.pathname.includes("/projectweeks")
+                    ? "active"
+                    : ""
+                }`}
                 to="#"
                 id="navbarDropdown"
                 role="button"
@@ -58,12 +69,12 @@ export default function Navbar() {
                 aria-labelledby="navbarDropdown"
               >
                 <li>
-                  <Link className="dropdown-item" to="/studentprojects">
+                  <Link className={`dropdown-item ${location.pathname === "/studentprojects" ? "active" : ""}`} to="/studentprojects">
                     Elevprojekt
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/projectweeks">
+                  <Link className={`dropdown-item ${location.pathname === "/projectweeks" ? "active" : ""}`} to="/projectweeks">
                     Programveckor
                   </Link>
                 </li>
